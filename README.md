@@ -1,6 +1,6 @@
-# OceanEmbed — satellite-embedding reconstruction of subsurface ocean temperature
+# SAMUDRA — satellite-embedding reconstruction of subsurface ocean temperature
 
-OceanEmbed looks only at **surface satellite observations** and reconstructs the ocean's
+SAMUDRA looks only at **surface satellite observations** and reconstructs the ocean's
 **temperature from the surface down to ~900 m**, every day, on a 0.25° grid over the
 **Bay of Bengal**, with a **calibrated uncertainty** at every point and the
 **cyclone-relevant ocean products** derived from it (cyclone heat potential, 26 °C and 20 °C
@@ -28,7 +28,7 @@ separate SIH engineering contribution are distinguished in
 
 ## Headline results (Bay of Bengal, Jun–Aug 2023, held-out test days 16–31 Aug)
 
-| | OceanEmbed | climatology baseline | improvement |
+| | SAMUDRA| climatology baseline | improvement |
 |---|---|---|---|
 | Temperature RMSE, 0–902 m (vs GLORYS) | **0.6256 ± 0.0149 °C** | 0.97 °C | **−36 %** |
 | Cyclone heat potential (TCHP) RMSE vs **independent ARGO floats** | **16.5 kJ/cm²** | 29.8 kJ/cm² | **−45 %** |
@@ -98,7 +98,7 @@ already assimilates ASCAT).
 ### What is distinctive
 
 - **Full 3D field + consistent cyclone products.** Earlier satellite TCHP methods for the
-  Indian Ocean estimate TCHP directly as a 2D field. OceanEmbed reconstructs the whole
+  Indian Ocean estimate TCHP directly as a 2D field. SAMUDRA reconstructs the whole
   temperature column and is trained so that the TCHP, D26, D20 and MLD *derived from that
   column* are accurate.
 - **Uncertainty checked against real floats.** A heteroscedastic head plus a 3-seed ensemble,
