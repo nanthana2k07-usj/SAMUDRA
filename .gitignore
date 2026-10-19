@@ -1,0 +1,38 @@
+# Data - large and fetched separately (see data/README.md)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.nc
+*.zarr
+
+# Run outputs (checkpoints, NetCDF, logs) - regenerate with `make experiments`
+artifacts/
+/checkpoints/*
+!/checkpoints/.gitkeep
+results/argo_cache.csv
+results/argo_matches_*.csv
+results/uncertainty_argo_points.csv
+oceanembed_results.zip
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.*.local
+
+# OS
+.DS_Store
+
+# Additional local files
+.ruff_cache/
+.env
+*.log

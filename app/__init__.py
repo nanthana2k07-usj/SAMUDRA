@@ -1,0 +1,1 @@
+"""Interactive SIH demonstration application."""

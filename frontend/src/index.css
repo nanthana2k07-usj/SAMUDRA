@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  color: #12304A;
+  background-color: #F8FAFC;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* INDIAN GOVERNMENT SCIENTIFIC DESIGN SYSTEM */
+  --gov-navy: #12304A;       /* Primary brand, headers, primary text */
+  --gov-navy-dark: #0A1C2C;  /* Deepest navy */
+  --gov-ocean: #176B9A;      /* Interactive ocean blue, accents */
+  --gov-ocean-light: #2584B8;
+  --gov-teal: #138A8A;       /* Scientific highlights, isotherm accent */
+  --gov-teal-dark: #0D6E6E;
+  --gov-amber: #D97706;      /* GLORYS reference, warning/cyclone accents */
+  --gov-red: #DC2626;        /* High-heat / alert highlights */
+  --gov-purple: #7C3AED;     /* Multi-modal / representativeness accents */
+
+  /* Neutral Surface Palette */
+  --gov-bg: #F8FAFC;         /* Clean cool off-white background */
+  --gov-bg-alt: #F1F5F9;     /* Slate tint background */
+  --gov-card: #FFFFFF;       /* Crisp white panels */
+  --gov-card-muted: #F8FAFC;
+  --gov-border: #E2E8F0;     /* Light grey clean borders */
+  --gov-border-strong: #CBD5E1;
+  --gov-border-dark: #94A3B8;
+
+  /* Typography Text Colors */
+  --gov-text-primary: #12304A;    /* Dark navy primary text */
+  --gov-text-secondary: #334155;  /* Slate-700 secondary text */
+  --gov-text-muted: #64748B;      /* Slate-500 tertiary/captions */
+  --gov-text-light: #94A3B8;
+
+  /* Monospace font for coordinates and telemetry */
+  --gov-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+  /* Elevation Shadows */
+  --gov-shadow-sm: 0 1px 2px 0 rgba(18, 48, 74, 0.05);
+  --gov-shadow: 0 1px 3px 0 rgba(18, 48, 74, 0.08), 0 1px 2px -1px rgba(18, 48, 74, 0.06);
+  --gov-shadow-md: 0 4px 6px -1px rgba(18, 48, 74, 0.07), 0 2px 4px -2px rgba(18, 48, 74, 0.05);
+  --gov-shadow-lg: 0 10px 15px -3px rgba(18, 48, 74, 0.08), 0 4px 6px -4px rgba(18, 48, 74, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  background-color: var(--gov-bg);
+  color: var(--gov-text-primary);
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--gov-bg);
+  color: var(--gov-text-primary);
+  line-height: 1.5;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--gov-teal);
+  outline-offset: 2px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--gov-text-primary);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 1.625rem;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+h4 {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: var(--gov-ocean);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gov-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
